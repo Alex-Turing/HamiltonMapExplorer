@@ -1,0 +1,75 @@
+<!--
+  StAuth10244: I Alexander Hernandez, 000896328 certify that this material is my original work. 
+  No other person's work has been used without due acknowledgement. 
+  I have not made my work available to anyone else.
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Google Map Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="mapScript.js"></script>
+</head>
+<body>
+    <header class="bg-dark text-white text-center">
+        <h1>Hamilton Map Explorer</h1>
+        <p class="lead">Explore the most interesting places in Hamilton with our map and control panel</p>
+    </header>
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-9 map-container">
+                <div id="map"></div>
+            </div>
+            <div class="col-sm-3 controls-container">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Tourist places</h5>
+                        <p class="card-text">The most beautiful places in Hamilton just a click away</p>
+                        <div class="d-grid gap-2 d-md-block">
+                            <button class="btn btn-primary" id="add_hotels">
+                                <img src="images/hotel.png" alt="icon" style="width: 20px; height: 20px; margin-right: 5px;">
+                                Hotels
+                            </button>
+                            <button class="btn btn-primary" id="add_restaurants">
+                                <img src="images/restaurant.png" alt="icon" style="width: 20px; height: 20px; margin-right: 5px;">
+                                Restaurants
+                            </button>
+                            <button class="btn btn-primary" id="add_waterfalls">
+                                <img src="images/waterfalls.png" alt="icon" style="width: 20px; height: 20px; margin-right: 5px;">
+                                Waterfalls
+                            </button>
+                            <button class="btn btn-primary" id="add_my_location">
+                                <img src="images/my-location.png" alt="icon" style="width: 20px; height: 20px; margin-right: 5px;">
+                                My Location
+                            </button>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Address">
+                            <label for="floatingInput">Enter Address to Place Marker</label>
+                        </div>
+                        <button class="btn btn-primary" id="find_my_address">
+                            <img src="images/address-icon.png" alt="icon" style="width: 20px; height: 20px; margin-right: 5px;">
+                            Find My Address
+                        </button>
+                        <div class="card mt-3">
+                            <div class="card-body" id="infowindow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2024 Alexander Hernandez</p>
+        <p class="mb-0">Mohawk College</p>
+    </footer>
+
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrZQuVBsHJ73OdqLkpvV19s0WMBRcXnlM&loading=async&callback=initMap&libraries=marker">
+    </script>
+</body>
+</html>

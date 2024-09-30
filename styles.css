@@ -1,0 +1,110 @@
+/**
+ * StAuth10244: I Alexander Hernandez, 000896328 certify that this material is my original work. 
+ * No other person's work has been used without due acknowledgement. 
+ * I have not made my work available to anyone else.
+ */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #343a40;
+  }
+
+header {
+    height: 10%;
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+
+h1, p {
+    color: #DFD0B8;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+  
+.map-container, .controls-container {
+    height: auto; /* calc(100vh - 150px); */
+    min-height: 300px;
+    padding-top: 2%;
+    margin: 0px;
+}
+
+.card {
+    background-color: #3C5B6F;
+    color: #DFD0B8;
+}
+
+.card.h-100 {
+    flex-grow: 1;
+    overflow-y: auto; 
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; 
+    justify-content: space-evenly; 
+}
+
+.btn-primary {
+    width: 35%;  
+    height: 50px; 
+    margin-bottom: 5px; 
+    font-size: 0.8rem;
+    background-color: #153448;
+    color: #DFD0B8;
+}
+
+.btn-primary-route {
+    width: 70%;  
+    height: 50px; 
+    margin-bottom: 5px; 
+    font-size: 0.8rem;
+    background-color: #153448;
+    color: #DFD0B8;
+}
+
+.form-floating {
+    margin-top: 40px;
+}
+ 
+.infowindow-font-format {
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+footer {
+    background-color: #343a40;
+    height: 50px;
+    color: #DFD0B8;
+}
+
+/* For tablet and mobile screens */
+@media (max-width: 1024px) {
+    .map-container, .controls-container {
+        width: 100%; 
+        height: 50vh;
+    }
+
+    .map-container {
+        height: 50vh; 
+    }
+
+    .controls-container {
+        margin-top: 20px; 
+        padding-top: 0;
+    }
+
+    h1 {
+        color: #DFD0B8;
+        font-size: 1rem;
+    }
+
+    .lead {
+        font-size: 0.7rem;
+    }
+}
