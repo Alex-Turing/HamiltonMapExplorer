@@ -1,3 +1,9 @@
+<!--
+  StAuth10244: I Alexander Hernandez, 000896328 certify that this material is my original work. 
+  No other person's work has been used without due acknowledgement. 
+  I have not made my work available to anyone else.
+ -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -62,8 +68,17 @@
         <p class="mb-0">Mohawk College</p>
     </footer>
 
-    <script async
-        src="https://maps.googleapis.com/maps/api/js?key=&loading=async&callback=initMap&libraries=marker">
+    <script>
+        const apiKey = 'api_key';
+
+        function loadGoogleMapsScript(apiKey) {
+            const script = document.createElement('script');
+            script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&loading=async&callback=initMap&libraries=marker`;
+            script.async = true;
+            document.head.appendChild(script);
+        }
+
+        loadGoogleMapsScript(apiKey);
     </script>
 </body>
 </html>

@@ -1,11 +1,17 @@
+/**
+ * StAuth10244: I Alexander Hernandez, 000896328 certify that this material is my original work. 
+ * No other person's work has been used without due acknowledgement. 
+ * I have not made my work available to anyone else.
+ */
+
 let map;
 let my_latitude, my_longitude;
 let markersArray = [];
 let userMarkersArray = [];
 let new_icon;
 let directionsRenderer;
-const apiKey = "api_key";
-const mapId = "map_id";
+const apiKey = 'api_key';
+const mapId = 'mapId';
 import { interest_locations } from './initialLocationsInitializer.js';
 import { hotels } from './hotelLocationsInitializer.js';
 import { restaurants } from './restaurantLocationsInitializer.js';
