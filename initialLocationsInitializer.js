@@ -1,10 +1,3 @@
-/**
- * StAuth10244: I Alexander Hernandez, 000896328 certify that this material is my original work. 
- * No other person's work has been used without due acknowledgement. 
- * I have not made my work available to anyone else.
- */
-
-
 const interest_locations = [
     { 
         name: "Art Gallery of Hamilton", 
