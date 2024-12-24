@@ -1,11 +1,13 @@
+require('dotenv').config();
+
 let map;
 let my_latitude, my_longitude;
 let markersArray = [];
 let userMarkersArray = [];
 let new_icon;
 let directionsRenderer;
-const apiKey = 'api_key';
-const mapId = 'mapId';
+const apiKey = process.env.GOOGLE_MAPS_API_KEY;
+const mapId = process.env.MAP_ID;
 import { interest_locations } from './initialLocationsInitializer.js';
 import { hotels } from './hotelLocationsInitializer.js';
 import { restaurants } from './restaurantLocationsInitializer.js';
